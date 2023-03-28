@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  color: rgb(63, 201, 247);
+  text-align: center;
+  padding-top: 80px;
+}
+
+.our-latest-work {
+  padding: 40px 150px 0 150px;
+}
+
+#our-latest-work .grid-container {
+  margin: 60px 0;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.our-latest-work-item {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  min-height: 90px;
+  border-top: 4px solid dodgerblue;
+}
+
+.our-latest-work-circle {
+  width: 55px;
+  height: 55px;
+  background-color: #e0f5fe;
+  border: 4px solid rgb(18, 153, 207);
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 4px));
+}
+
+.our-latest-work-content {
+  margin-top: 90px;
+  height: calc(100% - 50px);
+}
+
+.our-latest-work-circle img {
+  width: 45px;
+  height: 45px;
+}
+
+.our-latest-work-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(8px, 1.8rem, 15px);
+  height: clamp(8px, 1.8rem, 15px);
+  transform: translate(50%, calc(-50% - 2px));
+  border-radius: 50rem;
+  background-color: dodgerblue;
+}
+
+.our-latest-work-item:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: clamp(8px, 1.8rem, 15px);
+  height: clamp(8px, 1.8rem, 15px);
+  transform: translate(50%, calc(-50% - 2px));
+  border-radius: 50rem;
+  background-color: dodgerblue;
+}
+
+@media (min-width: 678px) {
+  .our-latest-work-circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 601px) {
+  .our-latest-work-circle img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (min-width: 601px) {
+  .our-latest-work-item {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .our-latest-work-wrapper {
+    padding-top: 6.8rem;
+  }
+}
+
+.heading1 {
+  color: rgb(70, 189, 236);
+  text-align: center;
+  /* padding: 10px; */
+  margin-top: 60px;
+}
+
+.awards-container {
+  padding: 40px;
+}
+
+.awards-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.image {
+  margin: auto 15px;
+}
+
+ul.styling {
+  list-style-type: none;
+  padding-left: 8px;
+}
+
+.footer {
+  background-color: rgb(59, 57, 57);
+}
+
+.footer-end {
+  padding-top: 10px;
+}
